@@ -122,9 +122,13 @@
 # print (f'{spisok} => {rezult}')
 
 # 2 вариант
+# spisok = [1, 2, 3, 5, 1, 5, 3, 10]
+# rezult = []
+# for i in spisok:
+#     if spisok.count(i) == 1:
+#         rezult.append(i)
+# print (f'{spisok} => {rezult}')
+
+# 3 вариант
 spisok = [1, 2, 3, 5, 1, 5, 3, 10]
-rezult = []
-for i in spisok:
-    if spisok.count(i) == 1:
-        rezult.append(i)
-print (f'{spisok} => {rezult}')
+print(f'{spisok} => {[i for i in spisok if spisok.count(i) == 1]}')
