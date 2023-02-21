@@ -91,31 +91,17 @@ k = int(input('Введите число k, которое не больше ч�
 #     for i in range(1, x):
 #         if x % i == 0:
 #             count += i
-#     return count
+#     return count 
 
-
-# for i in range(1, k):
-#     n = 0
-#     for j in range(2, delitel_sum(k)):
-#         if delitel_sum(k) % j == 0:
-#             n += j
-#             print (n)
-#     if i == n and i != delitel_sum(k) and i == min(i, delitel_sum(k)):
-#            print(f'{i} {delitel_sum(k)}')
-
-# print (delitel_sum (220))
-
-
-for i in range(1, z):
-    k = 0
+for i in range(1, k):
+    count = 0
     n = 0
-    for x in range(1, delitel_sum (i)):
+    for x in range(1, i):
         if i % x == 0:
-            k += x
-    print (k)
-    for j in range(1, k):
-        if k % j == 0:
+            count += x
+    for j in range(1, count):
+        if count % j == 0:
             n += j
-    if i == n and i != k and i == min(i, k):
-        print(i, k)
-k = 0       
+    if i == n and i != count and i == min(i, count):
+        print(i, count)
+        
